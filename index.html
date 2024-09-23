@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicación de Finanzas Personales - Controla tus ingresos y gastos">
+  <title>Money Map</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Money Map</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#transactions">Transacciones</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="transactions">
+      <h2>Registro de Transacciones</h2>
+      <form id="transaction-form">
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description" required>
+
+        <label for="amount">Monto:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="category">Categoría:</label>
+        <select id="category" name="category">
+          <option value="income">Ingreso</option>
+          <option value="expense">Gasto</option>
+        </select>
+
+        <button type="submit">Agregar Transacción</button>
+      </form>
+
+      <h3>Listado de Transacciones</h3>
+      <table id="transaction-table">
+        <thead>
+          <tr>
+            <th>Descripción</th>
+            <th>Monto</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se agregarán las transacciones dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Money Map</p>
+    <p>Contacto: contact@moneymap.com</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
