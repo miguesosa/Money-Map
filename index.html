@@ -15,6 +15,7 @@
         <li><a href="#home">Inicio</a></li>
         <li><a href="#transactions">Transacciones</a></li>
         <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -53,11 +54,27 @@
         </tbody>
       </table>
     </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xnnaeagy" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Money Map</p>
-    <p>Contacto: contact@moneymap.com</p>
+    <p>Contacto: soskewebs@gmail.com</p>
   </footer>
 
   <script src="app.js"></script>
