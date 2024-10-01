@@ -1,0 +1,39 @@
+/* Estilos para el header */
+header {
+  background-color: #112d4e; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-align: center;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+  list-style: none; /* Quitar viñetas */
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos para los enlaces */
+nav a {
+  text-decoration: none; /* Quitar subrayado */
+  color: white; /* Cambiar el color del texto */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00; /* Cambiar el color cuando se pasa el mouse */
+}

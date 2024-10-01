@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Money Map - Controla tus ingresos y gastos">
-  <title>Money Map</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Money Map</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#transactions">Transacciones</a></li>
-        <li><a href="#about">Sobre Nosotros</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Money Map - Controla tus ingresos y gastos"
+    />
+    <title>Money Map</title>
+    <!-- Importación de estilos externos -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-  <main>
-    <section id="transactions">
-      <h2>Registro de Transacciones</h2>
-      <form id="transaction-form">
-        <label for="description">Descripción:</label>
-        <input type="text" id="description" name="description" required>
+  <body>
+    <!-- Header con navegación -->
+    <header>
+      <h1>Money Map</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#transactions">Transacciones</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <label for="amount">Monto:</label>
-        <input type="number" id="amount" name="amount" required>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Sección de registro de transacciones -->
+      <section id="transactions">
+        <h2>Registro de Transacciones</h2>
+        <form id="transaction-form">
+          <label for="description">Descripción:</label>
+          <input type="text" id="description" name="description" required />
 
-        <label for="category">Categoría:</label>
-        <select id="category" name="category">
-          <option value="income">Ingreso</option>
-          <option value="expense">Gasto</option>
-        </select>
+          <label for="amount">Monto:</label>
+          <input type="number" id="amount" name="amount" step="0.01" required />
 
-        <button type="submit">Agregar Transacción</button>
-      </form>
+          <label for="category">Categoría:</label>
+          <select id="category" name="category">
+            <option value="income">Ingreso</option>
+            <option value="expense">Gasto</option>
+          </select>
 
-      <h3>Listado de Transacciones</h3>
-      <table id="transaction-table">
-        <thead>
-          <tr>
-            <th>Descripción</th>
-            <th>Monto</th>
-            <th>Categoría</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Aquí se agregarán las transacciones dinámicamente -->
-        </tbody>
-      </table>
-    </section>
+          <button type="submit">Agregar Transacción</button>
+        </form>
 
-    <section id="contact">
-      <h2>Contacto</h2>
-      <form action="https://formspree.io/f/xnnaeagy" method="POST">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+        <!-- Tabla de transacciones -->
+        <h3>Listado de Transacciones</h3>
+        <table id="transaction-table">
+          <thead>
+            <tr>
+              <th>Descripción</th>
+              <th>Monto</th>
+              <th>Categoría</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las transacciones se agregarán dinámicamente aquí -->
+          </tbody>
+        </table>
+      </section>
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
+      <!-- Sección "Sobre Nosotros" con imagen y video -->
+      <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <img src="ruta/a/imagen.jpg" alt="Imagen sobre el equipo" width="300" />
+        <h3>Video Explicativo</h3>
+        <video controls>
+          <source src="ruta/a/video.mp4" type="video/mp4" />
+          Tu navegador no soporta este formato de video.
+        </video>
+      </section>
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+      <!-- Sección de contacto con formulario funcional -->
+      <section id="contact">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/xnnaeagy" method="POST">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
 
-  <footer>
-    <p>&copy; 2024 Money Map</p>
-    <p>Contacto: soskewebs@gmail.com</p>
-  </footer>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-  <script src="app.js"></script>
-</body>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer con derechos de autor -->
+    <footer>
+      <p>&copy; 2024 Money Map</p>
+    </footer>
+
+    <!-- Importación del archivo JavaScript -->
+    <script src="app.js"></script>
+  </body>
 </html>
