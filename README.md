@@ -13,4 +13,4 @@ Este proyecto es una aplicación web diseñada para ayudar a los usuarios a gest
 - JavaScript para la lógica y manipulación del DOM.
 
 ## Autor:
-- [Miguel Adrián Sosa]
+- Miguel Adrián Sosa
