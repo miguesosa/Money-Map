@@ -1,39 +1,91 @@
-/* Estilos para el header */
-header {
-  background-color: #112d4e; /* Color de fondo */
-  color: white; /* Color del texto */
-  text-align: center;
-  padding: 10px;
-  font-family: "Arial", sans-serif;
+/* Aplicar la fuente Roboto a todo el sitio */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0ebce; /* Fondo claro para el cuerpo del sitio */
+  margin: 0;
+  padding: 0 15px; /* Agregar padding lateral para dar espacio al contenido */
 }
 
-/* Estilos para el footer */
-footer {
-  background-color: #333;
+/* Estilos para el header */
+header {
+  background-color: #395144; /* Fondo verde oscuro */
   color: white;
   text-align: center;
-  padding: 10px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  font-family: "Arial", sans-serif;
+  padding: 15px 20px; /* Aumentar padding para más espacio */
+  font-weight: 700;
+  margin-bottom: 20px; /* Agregar espacio debajo del header */
 }
 
 /* Estilos para la lista de navegación */
 nav ul {
-  list-style: none; /* Quitar viñetas */
+  list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-around;
 }
 
 /* Estilos para los enlaces */
 nav a {
-  text-decoration: none; /* Quitar subrayado */
-  color: white; /* Cambiar el color del texto */
+  text-decoration: none;
+  color: #aa8b56; /* Color marrón claro para enlaces */
   font-weight: bold;
+  padding: 10px 15px; /* Espacio interno para los enlaces */
 }
 
 nav a:hover {
-  color: #ffcc00; /* Cambiar el color cuando se pasa el mouse */
+  color: #f0ebce; /* Color claro cuando se pasa el mouse */
+}
+
+/* Fondo degradado en la sección de Transacciones */
+#transactions {
+  background: linear-gradient(
+    135deg,
+    #aa8b56,
+    #f0ebce
+  ); /* Marrón claro a beige */
+  padding: 25px 30px; /* Más padding para mejor espacio */
+  margin: 20px 0; /* Ajuste de margen para separar del resto */
+  border-radius: 8px;
+}
+
+/* Ajuste de márgenes y paddings generales */
+section {
+  margin: 40px 0; /* Mayor separación entre secciones */
+  padding: 25px 20px; /* Aumentar padding interno */
+  border-radius: 8px;
+}
+
+/* Contenedor para la sección "Sobre Mí" */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre imagen y texto */
+  background-color: #4e6c50; /* Fondo verde medio */
+  padding: 30px 25px; /* Mayor padding interno */
+  border-radius: 8px;
+  margin: 30px 0; /* Espacio entre secciones */
+}
+
+/* Estilos para el texto de "Sobre Mí" */
+.about-text {
+  flex: 1;
+  font-size: 18px; /* Texto más grande para legibilidad */
+  color: #f0ebce; /* Texto color claro */
+  line-height: 1.6;
+}
+
+/* Estilos para la imagen en "Sobre Mí" */
+.about-container img {
+  border-radius: 8px;
+  margin-right: 15px; /* Espacio extra alrededor de la imagen */
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #395144; /* Fondo verde oscuro */
+  color: #f0ebce; /* Texto color claro */
+  text-align: center;
+  padding: 15px 0; /* Padding vertical */
+  margin-top: 20px; /* Margen superior para separar del contenido */
 }

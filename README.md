@@ -61,6 +61,6 @@ Estamos trabajando para implementar nuevas características en las siguientes ve
 - **Gráficos Avanzados**: Añadir más tipos de gráficos interactivos para análisis avanzados.
 
 ## Créditos y Licencia
-- **Desarrollador**: Miguel Adrián Sosa ([GitHub](https://github.com/miguesosa))
+- **Desarrollador**: Miguel Adrián Sosa [GitHub](https://github.com/miguesosa)
 - **Licencia**: Este proyecto está bajo la licencia MIT, lo que permite su uso, modificación y distribución sin restricciones.
 
