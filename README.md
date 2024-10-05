@@ -1,5 +1,7 @@
 # Money Map
 
+**My Money Manager**
+
 ## Descripción del Proyecto
 **Money Map** es una aplicación web de Finanzas Personales diseñada para ayudarte a llevar un control eficiente de tus ingresos y gastos. A través de una interfaz intuitiva, puedes registrar tus transacciones, categorizarlas, y visualizar estadísticas en gráficos dinámicos para entender mejor tu situación financiera.
 
