@@ -64,5 +64,6 @@ Estamos trabajando para implementar nuevas características en las siguientes ve
 
 ## Créditos y Licencia
 - **Desarrollador**: Miguel Adrián Sosa [GitHub](https://github.com/miguesosa)
+- **Correo electrónico**: migueladriansosa@gmail.com
 - **Licencia**: Este proyecto está bajo la licencia MIT, lo que permite su uso, modificación y distribución sin restricciones.
 
