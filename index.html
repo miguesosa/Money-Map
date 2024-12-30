@@ -24,7 +24,6 @@
           <li><a href="#home">Inicio</a></li>
           <li><a href="#transactions">Transacciones</a></li>
           <li><a href="#summary">Resumen</a></li>
-          <!-- Nuevo enlace para la sección de tarjetas -->
           <li><a href="#about">Sobre Mí</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -47,6 +46,8 @@
           <select id="category" name="category">
             <option value="income">Ingreso</option>
             <option value="expense">Gasto</option>
+            <option value="savings">Ahorro</option>
+            <option value="debt">Deuda</option>
           </select>
 
           <button type="submit">Agregar Transacción</button>
@@ -54,7 +55,7 @@
 
         <!-- Tabla de transacciones -->
         <h3>Listado de Transacciones</h3>
-        <table id="transaction-table">
+        <table id="transaction-table" class="transactions-table">
           <thead>
             <tr>
               <th>Descripción</th>
@@ -123,24 +124,15 @@
         <h2>Reseñas</h2>
         <div class="reviews-container">
           <div class="card">
-            <p>
-              "Money Map me ha ayudado a organizar mis finanzas de una manera
-              fácil y efectiva. ¡Totalmente recomendado!"
-            </p>
+            <p></p>
             <p>- Usuario 1</p>
           </div>
           <div class="card">
-            <p>
-              "Gracias a esta app, pude visualizar mis gastos y ahorrar más
-              dinero mes a mes."
-            </p>
+            <p></p>
             <p>- Usuario 2</p>
           </div>
           <div class="card">
-            <p>
-              "Interfaz amigable y herramientas potentes para cualquier persona
-              que quiera gestionar su dinero inteligentemente."
-            </p>
+            <p></p>
             <p>- Usuario 3</p>
           </div>
         </div>
@@ -170,6 +162,6 @@
     </footer>
 
     <!-- Importación del archivo JavaScript -->
-    <script src="app.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

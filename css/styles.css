@@ -189,3 +189,52 @@ footer {
     width: 100%; /* Botón toma el ancho completo en móviles */
   }
 }
+
+/* Table Styles for Transactions */
+.transactions-table {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  border-collapse: collapse; /* Elimina los espacios entre bordes */
+  margin: 20px 0; /* Separación con otros elementos */
+  background-color: #f0ebce; /* Fondo claro */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Esconde elementos que sobresalen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 15px; /* Espaciado interno */
+  text-align: left; /* Alineación del texto */
+  border-bottom: 1px solid #d9d9d9; /* Línea divisoria entre filas */
+}
+
+.transactions-table th {
+  background-color: #4e6c50; /* Fondo verde medio */
+  color: white; /* Texto blanco */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 14px;
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #fcfaf4; /* Fondo alternado para filas pares */
+}
+
+.transactions-table tr:hover {
+  background-color: #e8e4d9; /* Fondo claro al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor al pasar sobre una fila */
+}
+
+.transactions-table td {
+  color: #395144; /* Texto en verde oscuro */
+  font-size: 16px; /* Tamaño de texto */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 14px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    padding: 10px;
+  }
+}
